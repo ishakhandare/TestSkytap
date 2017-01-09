@@ -1,0 +1,47 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\StudentBuild
+ > C:\Program Files (x86)\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files (x86)\Git\bin\git.exe config remote.origin.url https://github.com/vimpal/StudenteEnrollment # timeout=10
+Fetching upstream changes from https://github.com/vimpal/StudenteEnrollment
+ > C:\Program Files (x86)\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files (x86)\Git\bin\git.exe fetch --tags --progress https://github.com/vimpal/StudenteEnrollment +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files (x86)\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files (x86)\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 6932699a061d810fb3b1338ca74eefe0c1e11ab6 (refs/remotes/origin/master)
+ > C:\Program Files (x86)\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files (x86)\Git\bin\git.exe checkout -f 6932699a061d810fb3b1338ca74eefe0c1e11ab6
+ > C:\Program Files (x86)\Git\bin\git.exe rev-list 6932699a061d810fb3b1338ca74eefe0c1e11ab6 # timeout=10
+[StudentBuild] $ cmd /c call C:\Windows\TEMP\hudson7012952033040227714.bat
+
+C:\Program Files (x86)\Jenkins\workspace\StudentBuild>mvn package 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building StudentEnrollmentWithREST 1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ StudentEnrollmentWithREST ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ StudentEnrollmentWithREST ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ StudentEnrollmentWithREST ---
+[INFO] Compiling 11 source files to C:\Program Files (x86)\Jenkins\workspace\StudentBuild\target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.932 s
+[INFO] Finished at: 2017-01-09T10:10:58+05:30
+[INFO] Final Memory: 9M/31M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project StudentEnrollmentWithREST: Fatal error compiling: tools.jar not found: C:\Program Files (x86)\Java\..\lib\tools.jar -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

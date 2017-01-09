@@ -1,0 +1,23 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\StudentBuild
+ > C:\Program Files (x86)\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files (x86)\Git\bin\git.exe config remote.origin.url https://github.com/vimpal/StudenteEnrollment # timeout=10
+Fetching upstream changes from https://github.com/vimpal/StudenteEnrollment
+ > C:\Program Files (x86)\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files (x86)\Git\bin\git.exe fetch --tags --progress https://github.com/vimpal/StudenteEnrollment +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files (x86)\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files (x86)\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 6932699a061d810fb3b1338ca74eefe0c1e11ab6 (refs/remotes/origin/master)
+ > C:\Program Files (x86)\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files (x86)\Git\bin\git.exe checkout -f 6932699a061d810fb3b1338ca74eefe0c1e11ab6
+ > C:\Program Files (x86)\Git\bin\git.exe rev-list 6932699a061d810fb3b1338ca74eefe0c1e11ab6 # timeout=10
+[StudentBuild] $ cmd /c call C:\Windows\TEMP\hudson6249608868774132465.bat
+
+C:\Program Files (x86)\Jenkins\workspace\StudentBuild>mvn package 
+'mvn' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files (x86)\Jenkins\workspace\StudentBuild>exit 9009 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE
